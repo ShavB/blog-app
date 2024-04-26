@@ -12,7 +12,6 @@ const SearchBar: React.FC<SearchBarProps> = ({}) => {
   const [showSearchBar, setShowSearchBar] = useState("hidden");
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(searchValue);
     setSearchValue(e.target.value);
   };
 

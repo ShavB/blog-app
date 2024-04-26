@@ -2,7 +2,9 @@
 
   - [X] basic setup
   - [X] navbar
-  - [ ] Homepage
-  - [ ] Cards
+  - [X] Homepage
+  - [X] Cards
+  - [ ] Main featured Card
+  - [ ] article page
   - [ ] Dockerize
-  - [ ] Host the app
+  - [X] Host the app(hosted on vercel for now.)

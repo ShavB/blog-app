@@ -3,7 +3,7 @@ import SearchBar from "./searchBar";
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-800 h-16 text-white flex items-center p-4">
+    <div className="fixed w-full bg-slate-800 h-16 text-white flex items-center p-4">
       <div className="flex h-full justify-between w-full px-6">
         <h1 className="font-extrabold text-2xl">Shav.</h1>
 
