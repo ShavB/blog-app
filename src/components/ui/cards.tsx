@@ -27,10 +27,15 @@ const Cards: React.FC<CardProps> = ({ img, desc, date, title }) => {
     setOnHover("transition ease-in-out delay-150");
   };
 
+  const handlePageNavigate = () =>{
+    
+  }
+
   return (
     <>
       <section className="h-[22rem] w-[60rem] bg-[#ECE8E1]">
         <div
+          onClick={handlePageNavigate}
           onMouseEnter={handleHoverEnter}
           onMouseLeave={handleHoverLeave}
           className="flex flex-2 items-center p-10 mt-3 gap-4 cursor-pointer "

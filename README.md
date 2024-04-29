@@ -6,5 +6,5 @@
   - [X] Cards
   - [ ] Main featured Card
   - [ ] article page
-  - [ ] Dockerize
+  - [X] Dockerize
   - [X] Host the app(hosted on vercel for now.)
