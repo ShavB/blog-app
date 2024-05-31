@@ -1,8 +1,8 @@
 # Use the official Node.js image
-FROM node:18-alpine
+FROM node:18
 
 # Create and change to the app directory
-WORKDIR /usr/src/app/frontend
+WORKDIR /usr/src/app/backend
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -13,8 +13,14 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 3000
+# Copy the .env file
+COPY .env .env ./
 
-# Command to start the Vite development server
-CMD ["npm", "run", "dev"]
+# Build the NestJS application
+RUN npm run build
+
+# Expose the port the app runs on
+EXPOSE 8000
+
+# Command to run the application
+CMD ["npm", "run", "start:prod"]
